@@ -16,6 +16,7 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-enums-package: com.zt.mybatisplusexample.entity.enums
 
 logback:
   logDir: log/dev

@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -19,6 +21,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("shop_category")
+@AllArgsConstructor
 public class CategoryEntity extends Model<CategoryEntity> {
 
     private static final long serialVersionUID = 1L;
@@ -36,9 +39,9 @@ public class CategoryEntity extends Model<CategoryEntity> {
     private String name;
 
 
-    @Override
-    protected Serializable pkVal() {
-        return this.id;
+    public CategoryEntity(String name) {
+        this.name = name;
     }
+
 
 }
