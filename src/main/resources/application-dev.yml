@@ -1,0 +1,26 @@
+
+#spring
+spring:
+  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://192.168.16.128:3306/mybatis-plus-example
+    username: root
+#    password: kU#m5eHY5iTiQj#q
+    password: 123456
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:localhost:3306/mybatis_plus
+#    url: mpw:pBZqJb+r/StFGyRopKJyhZN8dvstxaXxubewECBMWM3e7XK+719AUXlC1y1Cu14i1MwqEdiJbBa+sEwFzyWEgA==
+#    username: mpw:hjR022j+cjKFE+35FLTQgg==
+#    password: mpw:kzLGIBmi4hT+dPmqnXLAIw==
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logback:
+  logDir: log/dev
+
+logging:
+  level:
+    com.zt.mybatis_plus_example.service.impl: trace
+    com.zt.mybatis_plus_example.controller: trace
