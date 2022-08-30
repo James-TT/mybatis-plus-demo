@@ -16,8 +16,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * @author Erwin Feng
- * @since 2021-03-08
+ * @author zt
+ * @since 2022-08-30
  */
 @Component
 @Slf4j
@@ -55,6 +55,13 @@ public class GoodsRepositoryTests extends MybatisPlusExampleApplicationTests {
             log.info(goodsEntity.toString());
             log.info(goodsEntity.getFlag().getValue() + "");
         }
+    }
+
+    @Test
+    public void testAddCategory(){
+        CategoryEntity categoryEntity = new CategoryEntity();
+        categoryEntity.setName("家电");
+        mpCategoryRepository.save(categoryEntity);
     }
 
     @Test

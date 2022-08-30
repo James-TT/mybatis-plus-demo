@@ -22,17 +22,17 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `shop_category`;
 CREATE TABLE `shop_category`  (
-  `id` bigint(0) NOT NULL COMMENT '主键ID',
+  `id` bigint(0) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
   `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT '商品类别名称',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for shop_goods
 -- ----------------------------
 DROP TABLE IF EXISTS `shop_goods`;
 CREATE TABLE `shop_goods`  (
-  `id` bigint(0) NOT NULL COMMENT '主键ID',
+  `id` bigint(0) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT '商品名称',
   `category_id` bigint(0) DEFAULT NULL COMMENT '商品类别ID',
   `stock_num` bigint(0) DEFAULT NULL COMMENT '库存数量',
@@ -45,6 +45,6 @@ CREATE TABLE `shop_goods`  (
   `update_by` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT '修改人',
   `version` int(0) DEFAULT NULL COMMENT '版本。默认：0。',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
