@@ -10,5 +10,5 @@ package com.zt.mybatisplusexample.entity;
 public class TestEntity {
     private String name;
     private String x;
-    private String cc;
+    private String cc1;
 }
