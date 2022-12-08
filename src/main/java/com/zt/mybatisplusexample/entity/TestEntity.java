@@ -9,6 +9,6 @@ package com.zt.mybatisplusexample.entity;
  */
 public class TestEntity {
     private String name;
-    private String ddx;
+    private String ddx1;
 
 }
