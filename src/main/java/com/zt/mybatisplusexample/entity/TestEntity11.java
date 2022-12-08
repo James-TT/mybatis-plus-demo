@@ -7,9 +7,8 @@ package com.zt.mybatisplusexample.entity;
  * @date : Create in 2022/12/8 16:00
  * @description :
  */
-public class TestEntity {
+public class TestEntity11 {
     private String name;
     private String x;
     private String cc1;
-    private String cc2;
 }
